@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="\My Goal\logo1.png">
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>menu navbar</title>
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<style>
+    body {
+        background-image: url(https://img.hebus.com/hebus_2012/05/09/preview/1336563901_46046.jpg);
+        margin: 0px;
+        font-family: cursive;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header {
+        width: 100%;
+        height: 122px;
+
+    }
+
+    #menuSIte {
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        /** for transparency**/
+        margin: 2px;
+        padding: 2px;
+        position: absolute;
+        border: none;
+
+    }
+
+    #menSiteNested {
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        /** for transparency**/
+        margin-right: 2px;
+        margin-left: 2px;
+        border: none;
+        outline: none;
+
+    }
+
+    #menSiteNested ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #menSiteNested ul li {
+        float: left;
+        position: relative;
+        list-style-type: none;
+    }
+
+    #menSiteNested ul li a {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        border: hidden;
+        display: block;
+        line-height: 50px;
+        text-decoration: none;
+        cursor: pointer;
+
+    }
+
+    #menSiteNested ul li a:hover {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        font-weight: bold;
+        border: none;
+        display: block;
+        line-height: 50px;
+        text-decoration: none;
+        background-color: hsla(127, 50%, 39%, 0.5)
+    }
+
+
+    #menSiteNested ul li ul {
+        position: absolute;
+        z-index: 1000;
+        top: 50px;
+        color: hsla(127, 50%, 39%, 0.5);
+        visibility: hidden;
+    }
+
+    #menSiteNested ul li:hover ul {
+        visibility: visible;
+        z-index: 1000;
+        color: hsla(127, 80%, 39%, 0.5)
+    }
+
+    #menSiteNested ul li ul li a {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /** for drop down list transparency**/
+
+    #menSiteNested ul li ul li a:hover {
+        background-color: hsla(127, 50%, 39%, 0.5);
+    }
+</style>
+
+
+<body>
+
+    <div class="menuSIte" id="menuSIte">
+        <div class="menSiteNested" id="menSiteNested">
+            <!--navbar menue-->
+
+            <!--home-->
+            <ul>
+                <li><a href="#">Home</a>
+                </li>
+            </ul>
+
+            <!-- about--->
+
+            <ul>
+                <li><a href="#"> About</a>
+                    <ul>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#"> Camps sites</a></li>
+                        <li><a href="#">Mission&vission</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+
+            <!--things to do --->
+
+            <ul>
+                <li><a href="#">Things To Do</a>
+                    <ul>
+                        <li><a href="#">Activites</a></li>
+                        <li><a href="#">Parks</a></li>
+                        <li><a href="#">shopes</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+
+                </li>
+
+            </ul>
+
+
+            <!-- contacts--->
+
+            <ul>
+                <li><a href="#">Contacts</a>
+
+                </li>
+
+            </ul>
+
+            <!-- news--->
+
+            <ul>
+                <li><a href="#">News</a>
+
+
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
